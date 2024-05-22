@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+a, a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	display: inline-block;
+}
+
+.header{
+	width: 100%;
+	height:100%;
+}
+
+.header .nav-bar{
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+}
+
+.header .nav-bar .logo{
+	margin-left: 50px;
+
+}
+.logo {
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.header .nav-bar .logo a{
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.header .nav-bar .logo .menu ul li{
+	margin-right: 30px;
+}
+
+.header .nav-bar .menu ul li a{
+	font-size: 19px;
+	letter-spacing: 2px;
+	padding: 10px;
+	border-radius: 5px;
+	text-transform: capitalize;
+	transition: all 0.5s;
+	opacity: 0.6;
+	color:#fff;
+}
+
+.header .nav-bar .menu ul li a.active{
+	opacity: 1; 
+}
+
+.header .nav-bar .menu ul li a:hover{
+	opacity: 1; 
+}
+
+.header .nav-bar .social-media ul li i{
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	margin-right: 5px;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 19px;
+	background-color: black;
+	transition: all 0.3s ease-in-out;
+}
+
+.header .nav-bar .social-media ul li i:hover{
+	background-color: rgb(255 0 0 / 0.9);
+} 
+
+.hero{
+	width: 100%;
+	background: url(bg.jpg);
+}
+
+.hero .row{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+	margin: auto;
+}
+
+.hero .row .left-sec{
+	width: 30%;
+	margin-top: 100px;
+	margin-left: 50px;
+}
+
+.hero .row .left-sec h2{
+	font-size: 85px;
+	color: black;
+	text-transform: capitalize;
+}
+
+.hero .row .left-sec h2 span{
+	color: #d43242;
+}
+
+.hero .row .left-sec p{
+	margin: 20px;
+	color: black;
+	line-height: 28px;
+	padding-right: 150px;
+	justify-content: space-between;
+}
+
+.hero .row .left-sec .disc-btn{
+	display: flex;
+	align-items: center;
+	outline: none;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-top: 50px;
+	padding: 0 25px;
+	border: 3px solid gray;
+	background-color: black;
+	box-shadow: 5px 7px 20px #000;
+}
+
+.hero .row .left-sec .disc-btn a{
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: 2px;
+	margin-right: 15px;
+	text-transform: capitalize;
+}
+
+.hero .row .left-sec .disc-btn span{
+	color: #fff;
+	font-size: 45px;
+}
+
+.hero .information{
+	width: 100%;
+	display: flex;
+	margin-top: 100px;
+}
+
+.hero .information .Production{
+	margin-right: 40px;
+	line-height: 3px;
+}
+
+.hero .information .Production h2{
+	font-size: 20px;
+	margin-left: 20px;
+	letter-spacing: 0px;
+}
+
+.hero .information .Production p{
+	letter-spacing: 1px;
+}
+
+.hero .right-sec{
+	width: 70%;
+	padding-top: 100px;
+}
+
+.hero .right-sec img{
+	width: 650px;
+	height: 550px;
+	margin: auto;
+
+}
+
+.slick-next, .slick-prev{
+	z-index: 999;
+}
+
+
+
+.contact{
+	position: relative;
+	min-height: 100%;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(bg-image.jpg);
+	background-size: cover;
+}
+
+.contact .conn{
+	max-width: 800px;
+	text-align: center;
+}
+
+.contact .conn h2{
+	font-weight: 500;
+	font-size: 36px;
+	color: #fff;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.container .contactInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container .contactInfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.container .contactInfo .box .ilogo{
+	min-height: 60px;
+	width: 50px;
+	height: 50px;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+	background: #fff;
+}
+
+.container .contactInfo .txt{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.container .contactInfo .txt h3{
+	font-weight: 500;
+	color: #00bcd4;
+}
+
+.contactForm{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+
+.contactForm h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contactForm .inputBox input,textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+
+.contactForm .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+	color: #e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+
+}
+
+.about{
+	background-image: 
+}
+
+.about h2{
+	font-size: 30px;
+	align-items: center;
+	text-align: center;
+	margin-top: 50px;
+	font-family: Times New Roman;
+}
+
+.about p{
+	font-size: 17px;
+	font-weight: 20;
+	text-align: justify;
+	margin-top: 10px;
+	margin-right: 60px;
+	margin-left: 50px;
+	font-family: Bookman Old Style;
+	text-indent: 5%;
+	line-height: 2;
+	letter-spacing: 2px;
+}
+
+.about h3{
+	font-size: 20px;
+	font-family: Times New Roman;
+	margin-left: 50px;
+}
+
+.xtreme-btn{
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	outline: none;
+	border-radius: 90;
+	cursor: pointer;
+	margin-top: 30px;
+	padding: 0 25px;
+	border: 3px solid white;
+	background-color: black;
+	box-shadow: 5px 7px 20px #000;
+}
+
+.foot p{
+	margin-top: 70px;
+	text-align: center;
+	font-size: 15px;
+}
+
+
+.carousel-inner{
+	background: E8e4c9;
+}
+
+.carousel-inner img {
+    max-height: 500px; 
+    margin: auto; 
+    max-width: 700px;
+    width: 700px;
+    height: 500px;
+}
+
+.arrow{
+	color: black;
+}
